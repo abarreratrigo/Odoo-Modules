@@ -10,6 +10,7 @@
         'views/product_views.xml',
         'report/report.xml',
         'report/report_template.xml'
+        'report/report_label_dymo.xml'
     ],
     'installable': True,
     'application': True
