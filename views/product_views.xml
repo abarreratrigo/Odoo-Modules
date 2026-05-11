@@ -24,6 +24,12 @@
         <field name="model">product.template</field>
         <field name="arch" type="xml">
             <form string="Producto Rother">
+                <header>
+                    <button name="%(rother_product_label_dymo)d"
+                        string="Imprimir Etiqueta"
+                        type="action"
+                        class="btn-primary" />
+                </header>
                 <sheet>
                     <field name="image_1920" widget="image" class="oe_avatar" />
                     <div class="oe_title">
@@ -52,6 +58,18 @@
                         </group>
                     </group>
                 </sheet>
+                <div class="oe_chatter">
+                    <button name="action_update_quantity_on_hand"
+                            string="Actualizar la cantidad"
+                            type="object"
+                            class="btn-secondary"
+                            groups="stock.group_stock_manager" />
+                    <button name="action_replenishment"
+                            string="Reponer"
+                            type="object"
+                            class="btn-secondary"
+                            groups"stock.group_stock_manager" />
+                </div>
             </form>
         </field>
     </record>
