@@ -59,7 +59,7 @@
                                     <td><strong>Coste</strong></td>
                                     <td>
                                         <span t-field="o.standard_price"
-                                            t-options="{"widget": "monetary", "display_currency": o.currency_id}" />
+                                            t-options="{'widget': 'monetary', 'display_currency': o.currency_id}" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -84,7 +84,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Código de barras</strong></td>
-                                    <td t-field="barcode" />
+                                    <td t-field="o.barcode" />
                                 </tr>
                             </tbody>
                         </table>
